@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html , body {
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /*CSS INDEX*/
+
+    /*GRILLA INDEX*/
+    
+div#wrapper {
+        display: grid;
+        grid-template-areas: 
+        "miheader miheader"
+        "seccionsudbeat miaside"
+        "seccionresident miaside"
+        "seccioncercle miaside"
+        "seccionlongobardi miaside"
+        "mifooter mifooter"
+        ;
+        grid-template-columns: auto 170px ;
+        grid-template-rows: 160px 1fr 1fr 1fr 1fr 60px ; 
+        grid-row-gap: 0.4px; 
+        grid-column-gap: 0px  ;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    /*BARRA NAVEGACION*/
+
+header#header {
+        grid-area: miheader;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-bottom: 1.5px solid rgb(77, 77, 77);
+
+    }
+
+header picture img {
+        width: 19.2rem;
+        height: 10.3rem;
+        margin-left: 5rem;
+}
+
+header nav {
+        margin-right: 7rem;    
+    }
+
+header nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0px 1rem;
+    }
+
+header nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+
+    }
+
+header nav ul li a:hover {
+        cursor: pointer;
+        filter: opacity(0.8);
+    }
+
+    /*SECCIONES INDEX*/
+
+
+div#container__secciones {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center ; 
+        margin-right: 1rem; 
+        margin-left: 1rem;
+        gap: 4rem;
+        font-size: 1.4rem; 
+    }
+
+    /*SECCION SUDBEAT*/
+
+    
+    section#seccion__sudbeat {
+        grid-area: seccionsudbeat ;
+    }
+    
+    .div__sudbeat {
+        width: 45rem;
+        height: 25rem;
+        /* border: 3px solid rgb(153, 153, 153); */
+        border-radius: 20px;  
+        -webkit-box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.41); 
+        box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.30);
+        padding: 1rem;
+        border: 4px thick rgba(255, 255, 255, 0.4);
+    }
+
+    #titulo__sudbeat {
+        font-size: 2rem;  
+    }
+
+    #parrafo__sudbeat {
+        font-size: 1.1rem;
+    }
+
+    #foto__sudbeat {
+        border-radius: 2rem; 
+    }
+
+    #foto__sudbeat:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    /*SECCION RESIDENT*/
+
+
+    section#seccion__resident {
+        grid-area: seccionresident;
+    }
+
+    .div__resident {
+        width: 45rem;
+        height: 25rem;
+        border: 4px thick rgba(255, 255, 255, 0.4);
+        border-radius: 20px; 
+        -webkit-box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.41); 
+        box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.30);
+        padding: 1rem;
+    }
+
+    #titulo__resident {
+        font-size: 2rem;  
+    }
+
+    #parrafo__resident {
+        font-size: 1.1rem;
+    }
+
+    #foto__resident {
+        border-radius: 2rem;  
+    }
+
+    #foto__resident:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    /*SECCION LONGOBARDI*/
+
+
+    section#seccion__longobardi {
+        grid-area: seccionlongobardi;
+    }
+
+    .div__longobardi {
+        width: 45rem;
+        height: 25rem;
+        border: 4px thick rgba(255, 255, 255, 0.4);
+        border-radius: 20px; 
+        -webkit-box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.41); 
+        box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.30);        padding: 1rem;
+    }
+
+    #titulo__longobardi {
+        font-size: 2rem;  
+    }
+
+    #parrafo__longobardi {
+        font-size: 1.1rem;
+    }
+
+    #foto__longobardi {
+        border-radius: 2rem; 
+    }
+
+    #foto__longobardi:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    /*SECCION CERCLE*/
+
+
+    section#seccion__cercle {
+        grid-area: seccioncercle;
+    }
+
+    .div__cercle {
+        width: 45rem;
+        height: 25rem;
+        border: 4px thick rgba(255, 255, 255, 0.4);
+        border-radius: 20px; 
+        -webkit-box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.41); 
+        box-shadow: 0px 0px 30px 4px rgba(148,148,148,0.30);        
+        padding: 1rem;
+    }
+
+    #titulo__cercle {
+        font-size: 2rem;  
+    }
+
+    #parrafo__cercle {
+        font-size: 1.1rem;
+    }
+
+    #foto__cercle {
+        border-radius: 2rem;  
+    }
+
+    #foto__cercle:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    div section img {
+        height: 13rem;
+        width: 14rem;
+    }
+
+    div section p {
+        color: #fff;
+    }
+
+    /*ASIDE*/
+
+    
+    aside#aside {
+        grid-area: miaside; 
+        border: 1.5px solid rgb(77, 77, 77);
+        border-radius: 4px; 
+        /* box-shadow: 6px 3px 2px rgb(58, 58, 58);
+ */    }
+    
+    /*FOOTER*/
+
+
+    footer#footer {
+        grid-area: mifooter; 
+        color: #fff; 
+        font-size: 1.1rem; 
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border-top: 1.5px solid rgb(77, 77, 77);
+        border-radius: 4px; 
+    }
+
+    /*CSS BIOGRAFIA*/
+
+    /*GRILLA BIOGRAFIA*/
+
+    div#wrapper__biografia {
+
+        display: grid;
+        grid-template-areas: 
+        "miheader miheader"
+        "seccionbiografia miaside"
+        "secciongaleria miaside"
+        "mifooter mifooter"
+        ;
+        grid-template-columns: auto 170px ;
+        grid-template-rows: 160px 1fr 1fr 60px ; 
+        grid-row-gap: 0.4px;
+        grid-column-gap: 10px  ;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /*SECCION BIOGRAFIA*/
+
+    section#seccion__biografia {
+        grid-area: seccionbiografia ;
+    }
+
+    .div__biografia {
+        width: 45rem;
+        height: 25rem;
+        padding: 1rem;
+    }
+
+    #foto__biografia {
+        border-radius: 1.5rem; 
+        width: 24rem;  
+        height: 16rem; 
+        -webkit-box-shadow: 6px 0px 30px -5px rgba(148,148,148,0.22); 
+        box-shadow: 6px 0px 30px -5px rgba(148,148,148,0.22);
+    }
+
+    #foto__biografia:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #parrafo__biografia {
+        font-size: 1.3rem; 
+    }
+
+    #titulo__biografia {
+        font-size: 2rem;  
+    }
+
+    /*SECCION GALERIA DE FOTOS*/
+
+    section#seccion__galeria {
+        grid-area: seccionresident;
+    }
+
+    .div__galeria {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+    .div__galeria {
+        width: 45rem;
+        height: 25rem;
+        border-radius: 10px; 
+        padding: 1rem;
+    }
+
+    #titulo__galeria {
+        font-size: 2rem;  
+    }
+
+    #foto__galeria1 {
+        border-radius: 2rem;  
+        width: 15rem;
+        height: 10rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria2 {
+        border-radius: 1rem;  
+        width: 14rem;
+        height: 10rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria3 {
+        border-radius: 1rem;  
+        width: 14rem;
+        height: 10rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria4 {
+        border-radius: 1rem;  
+        width: 15rem;
+        height: 11rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria5 {
+        border-radius: 1rem;  
+        width: 14rem;
+        height: 11rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria6 {
+        border-radius: 1rem;  
+        width: 14rem;
+        height: 11rem; 
+        -webkit-box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3); 
+        box-shadow: 0px 0px 30px -5px rgba(102,102,102,0.3);
+    }
+
+    #foto__galeria1:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #foto__galeria2:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #foto__galeria3:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #foto__galeria4:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #foto__galeria5:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #foto__galeria6:hover {
+        filter: opacity(0.8);
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    /*ASIDE BIOGRAFIA*/
+
+    body div aside#aside__biografia {
+        grid-area: miaside; 
+        border: 1.5px solid rgb(77, 77, 77);
+        border-radius: 4px; 
+        /* box-shadow: 6px 3px 2px rgb(58, 58, 58);
+ */    }
+
+    /*FOOTER BIOGRAFIA*/
+
+    body div footer#footer__biografia {
+
+        grid-area: mifooter; 
+        color: #fff; 
+        font-size: 1.1rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        border-top: 1.5px solid rgb(77, 77, 77);
+
+        }
+
+        /*MEDIA PARA EL INDEX*/
+
+    @media screen and (max-width: 480px) {
+        aside#aside {
+            visibility: hidden;
+        } 
+
+    }
+
+    /*MEDIA PARA LA BIOGRAFIA*/
+
+    @media screen and (max-width: 480px) {
+        aside#aside__biografia {
+            visibility: hidden;
+        }  
+
+    }
